@@ -1,7 +1,7 @@
 {
-  "name": "teamprojectbteam-back",
+  "name": "antmovement_be",
   "version": "1.0.0",
-  "description": "백엔드용",
+  "description": "",
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
