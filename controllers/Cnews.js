@@ -343,7 +343,7 @@ exports.saveMyWord = async (req, res) => {
         const user = await UserSchema.findOne({ user_id: id });
         if (user) {
             const duplicateCheck = user.word_bookmark.some(
-                (word) => word._id === modalWord._id
+                (word) => word.toString() === modalWord._id
             );
             if (!duplicateCheck) {
                 user.word_bookmark.push(modalWord._id);
